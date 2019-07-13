@@ -1,7 +1,17 @@
 # Logistic Regression Shape Classifier
 
 
-I created a simple triangle/circle classifier from scratch using logistic regression to learn how neural newtworks work.
+I created a simple triangle/circle classifier from scratch using logistic regression to learn how neural newtworks work. This code runs on Python 3 and the latest (2019) version of imported modules.
+
+
+## To run notebook directly from terminal:
+
+``` runipy shapeC.ipynb ```
+
+If runipy is not installed:
+
+``` pip install runipy ```
+
 
 How this works, as simply as possible:
 
