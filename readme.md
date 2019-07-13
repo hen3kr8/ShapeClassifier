@@ -5,14 +5,14 @@ I created a simple triangle/circle classifier from scratch using logistic regres
 
 How this works, as simply as possible:
 
-##Input:
+## Input:
 
 Our input data, *x* (which is a collection of 200px by 200px images of either triangles or circles) is flattened. This is our training data.
 
 Our training data also has labels, 0 if it is a circle and 1 if it is a triangle.
 We will call this collection of labels *y*.
 
-##Forward Propogation:
+## Forward Propogation:
 
 *x* is multiplied by our weights, *w*, and a bias *b* is added to give us z.
 
@@ -20,20 +20,20 @@ Our weights and bias is initialised to 0.01 and 0 respectfully.
 
 *z = xw + b*
 
-###Activation function:
+### Activation function:
 
 *z* is then pushed through the activation function (basically takes the value and classifies it as either 0 or 1) to produce the prediction of y, *y_pred*, given *z*. The activation function used here is a sigmoid function.
 
 ```y_pred = sigmoid(z)*```
 
-###Loss function:
+### Loss function:
 
 We now compare *y* (the actual labels of our images) to *y_pred*.
 
 We calculate the mean squared error of all *y_pred* and *y*. The result is the **cost**, which shows how well our model is currently performing with the given weights and bias.
 *Note that *y* and *y_pred* are vectors.
 
-##Back Propogation:
+## Back Propogation:
 
 We update our weights and bias, by calculating:
 
@@ -50,7 +50,7 @@ After the model has been built, we test it using test data (data which the model
 
 ---
 
-##Results:
+## Results:
 
 The model achieves a cost of 0 after 20 iterations. This means not one image was classified incorrectly after only 20 iterations. So the model has a accuracy of 100%.
 
@@ -61,7 +61,7 @@ The reason why overfitting is bad, is that given a circle that does not conform 
 
 ---
 
-##Going Forward
+## Going Forward
 
 The purpose of this code was to learn how a neural network, logistic logression in particlar, work and not make an amazing shape classifier. I learned much about this topic and I would like to learn more. Some ideas I had were to create a model that is able to find waldo, with a nice UI, and training a model able to identify captha's.
 
