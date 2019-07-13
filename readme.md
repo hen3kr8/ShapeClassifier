@@ -48,6 +48,8 @@ And now we do forward propogation again, but now with our new weights and bias. 
 
 After the model has been built, we test it using test data (data which the model has never seen before) and evaluate its preformance.
 
+---
+
 ##Results:
 
 The model achieves a cost of 0 after 20 iterations. This means not one image was classified incorrectly after only 20 iterations. So the model has a accuracy of 100%.
@@ -57,9 +59,13 @@ Almost all cirlcle images look identical; they all occur in the exact center of 
 
 The reason why overfitting is bad, is that given a circle that does not conform to the training data, (i.e. not filled, smaller or not centered) it will could be misclassified.
 
-The purpose of this code was to learn how a neural network, logistic logression in particlar, work and not make an amazing shape classifier. I learned much about this topic and I would like to create a model that is able to find waldo.
+---
+
+##Going Forward
+
+The purpose of this code was to learn how a neural network, logistic logression in particlar, work and not make an amazing shape classifier. I learned much about this topic and I would like to learn more. Some ideas I had were to create a model that is able to find waldo, with a nice UI, and training a model able to identify captha's.
 
 The data is from
-https://www.kaggle.com/smeschke/four-shapes
+[https://www.kaggle.com/smeschke/four-shapes] [https://www.kaggle.com/smeschke/four-shapes]
 
 (I followed a tutorial on how to build a neural network, which I for the life of me cannot seem to locate, I apologize)
